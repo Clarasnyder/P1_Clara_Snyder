@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>styleinspo</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="accessories-box">
+                <img 
+                 id="accessories" 
+                 src="assets/sunglass1.png"
+                 onclick="changeAccessories()">
+            </div>
+
+            <div class="tops-box">
+                <img 
+                 id="coffee" 
+                 class="side-item" 
+                 src="assets/coffee1.png"
+                 onclick="changeCoffee()">
+
+                <img 
+                 id="tops" 
+                 src="assets/top1.png"
+                 onclick="changeTops()">
+
+                 <img 
+                 id="purses" 
+                 class="side-item" 
+                 src="assets/purse1.png"
+                 onclick="changePurses()">
+            </div>
+            <div class="pants-box">
+                <img 
+                id="pants" 
+                src="assets/jeans1.png" 
+                onclick="changePants()"
+                >
+            </div>
+
+            <div class="shoes-box">
+               <img 
+                id="shoes" 
+                src="assets/shoe1.png" 
+                onclick="changeShoes()"
+            </div>
+        </div>
+      <script>
+let pantsIndex = 0;
+
+const pantsOptions = [
+  "assets/jeans1.png",
+  "assets/pants2.png",
+  "assets/shorts3.png",
+  "assets/jeans4.png",
+
+];
+
+function changePants() {
+  pantsIndex++;
+  
+  if (pantsIndex >= pantsOptions.length) {
+    pantsIndex = 0;
+  }
+
+  document.getElementById("pants").src = pantsOptions[pantsIndex];
+}
+
+let accessoriesIndex = 0;
+
+const accessoriesOptions = [
+  "assets/sunglass1.png",
+  "assets/sunglass2.png",
+  "assets/sunglass3.png",
+  "assets/hat1.png",
+
+];
+
+function changeAccessories() {
+  accessoriesIndex++;
+
+  if (accessoriesIndex >= accessoriesOptions.length) {
+    accessoriesIndex = 0;
+  }
+
+  document.getElementById("accessories").src = accessoriesOptions[accessoriesIndex];
+}
+
+
+let topsIndex = 0;
+
+const topsOptions = [
+  "assets/top1.png",
+  "assets/top2.png",
+  "assets/top4.png",
+  "assets/top5.png",
+  "assets/top6.png",
+  "assets/top7.png",
+
+];
+
+function changeTops() {
+  topsIndex++;
+
+  if (topsIndex >= topsOptions.length) {
+    topsIndex = 0;
+  }
+
+  document.getElementById("tops").src = topsOptions[topsIndex];
+}
+
+let coffeeIndex = 0;
+
+const coffeeOptions = [
+  "assets/coffee1.png",
+  "assets/coffee2.png",
+  "assets/coffee3.png"
+  
+];
+
+function changeCoffee() {
+  const img = document.getElementById("coffee");
+  
+  // Optional fade effect
+  img.style.opacity = 0;
+
+  setTimeout(() => {
+    coffeeIndex = (coffeeIndex + 1) % coffeeOptions.length;
+    img.src = coffeeOptions[coffeeIndex];
+    img.style.opacity = 1;
+  }, 150);
+}
+
+let pursesIndex = 0;
+
+const pursesOptions = [
+  "assets/purse1.png",
+  "assets/purse2.png",
+  "assets/purse3.png",
+  "assets/purse4.png",
+  
+];
+
+function changePurses() {
+  const img = document.getElementById("purses");
+  
+  // Optional fade effect
+  img.style.opacity = 0;
+
+  setTimeout(() => {
+    pursesIndex = (pursesIndex + 1) % pursesOptions.length;
+    img.src = pursesOptions[pursesIndex];
+    img.style.opacity = 1;
+  }, 150);
+}
+
+
+let shoesIndex = 0;
+
+const shoesOptions = [
+  "assets/shoe1.png",
+  "assets/shoe2.png",
+  "assets/shoe3.png",
+  "assets/shoes3.png",
+  "assets/birkenstocks.png",
+
+];
+
+function changeShoes() {
+  shoesIndex++;
+
+  if (shoesIndex >= shoesOptions.length) {
+    shoesIndex = 0;
+  }
+
+  document.getElementById("shoes").src = shoesOptions[shoesIndex];
+}
+
+
+
+
+</script>
+
+<a href="file:///Users/claramae/Desktop/GRDS%20256/P1_Clara_Snyder/back_page/back_page.html" class="bottom-button">
+         <span class="arrow"></span>
+     </a>
+
+     <!-- Back button top-left -->
+<a href="file:///Users/claramae/Desktop/GRDS%20256/P1_Clara_Snyder/mosaic/mosaic.html" class="top-button">
+    <span class="arrow-back"></span>
+</a>
+
+
+    </body>

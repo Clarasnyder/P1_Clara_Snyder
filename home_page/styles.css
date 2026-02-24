@@ -1,0 +1,64 @@
+body {
+	background-image: url("assets/baby_clara.JPG");
+	background-color: lightgoldenrodyellow;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+
+	
+	
+
+	font-size: 100px;
+	font-family: arial;
+	text-align: center;
+	text-transform: uppercase;
+	font-style: initial;
+	position: relative;
+	color: lightgoldenrodyellow;
+	filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+	
+
+}
+
+
+
+
+.bottom-button {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: none;
+	border: none;
+	padding: 20px;
+	cursor: pointer;
+	color: lightgoldenrodyellow;
+	text-decoration: none;
+}
+
+.arrow {
+	width: 18px;
+	height: 18px;
+	border-right: 3px solid currentColor;
+	border-bottom: 3px solid currentColor;
+	transform: rotate(315deg);
+	display: block;
+
+}
+
+.bottom-button:hover {
+	color: lightgrey;
+
+}
+
+
+
+	
+
+

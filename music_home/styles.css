@@ -1,0 +1,36 @@
+* {
+	background-color: lightgrey;
+}
+
+.vinyl-container {
+	width: 100vw;
+	height: 400px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+}
+
+.vinylrecord {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+
+}
+
+.vinyl-spin {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

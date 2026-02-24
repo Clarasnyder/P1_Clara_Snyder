@@ -1,0 +1,207 @@
+* {
+	margin: 2;
+	background-color: lightgoldenrodyellow;
+	
+}
+
+
+
+
+/* cluster of clickable pieces positioned over background head */
+.mosaic-cluster {
+  position: fixed;
+  top: 52%;       /* tweak these values until the mosaic sits over your head */
+  left: 46%;
+  transform: translate(-50%, -50%);
+  width: 600px;   /* overall cluster width */
+  height: 500px;  /* overall cluster height */
+}
+
+.piece {
+  position: absolute;
+  width: 160px;
+  height: 110px;
+  overflow: hidden;        /* keep slides inside the piece box */
+  transition: transform 0.3s ease;
+  display: block;          /* <a> will fill the space so it's fully clickable */
+}
+
+.piece:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.piece2 {
+	z-index: 10;
+}
+
+
+.piece1 { top: 22%; left: 47%; transform: rotate(-6deg); }
+.piece2 { top: 43%; left: 37%; transform: rotate(5deg); }
+.piece3 { top: 50%; left: 62%; transform: rotate(15deg); }
+.piece4 { top: 65%; left: 35%; transform: rotate(4deg); }
+.piece5 { top: 30%; left: 60%; transform: rotate(-8deg); }
+.piece6 { top: 42%; left: 20%; transform: rotate(-6deg); }
+.piece7 { top: 20%; left: 20%; transform: rotate(-2deg); /* you can reposition this */ }
+
+
+.container {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+	gap: 20px;
+}
+
+
+
+.topbox {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 200px;
+	justify-content: flex-start;
+	gap: 300px;
+	
+}
+
+.topbox img {
+	width: 150px;
+	height: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+.slideshow {
+	position: relative;
+	width: 100%;      /* fill the parent .piece box */
+	height: 100%;
+	overflow: hidden;
+}
+
+.slideshow img {
+	position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: cut 6s infinite;
+  animation-fill-mode: both;
+  z-index: 1;
+
+
+
+}
+
+.slideshow { animation-delay: 0s; }
+.slideshow2 { animation-delay: 1s; }
+.slideshow3 { animation-delay: 2s; }
+.slideshow4 { animation-delay: 3s; }
+.slideshow5 { animation-delay: 4s; }
+.slideshow6 { animation-delay: 5s; }
+.slideshow7 { animation-delay: 6s; }
+
+
+.slideshow img:nth-child(1) { animation-delay: 0s; z-index: 6; }
+.slideshow img:nth-child(2) { animation-delay: 1s; z-index: 5; }
+.slideshow img:nth-child(3) { animation-delay: 2s; z-index: 4; }
+.slideshow img:nth-child(4) { animation-delay: 3s; z-index: 3; }
+.slideshow img:nth-child(5) { animation-delay: 4s; z-index: 2; }
+.slideshow img:nth-child(6) { animation-delay: 5s; z-index: 1; }
+
+@keyframes cut{
+	0% {opacity: 1;}
+	16% {opacity: 1;}
+	17% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+
+
+
+
+
+.slideshow2 {
+	position: relative;
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+
+}
+
+.slideshow2 img {
+	position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: cut 6s infinite;
+  animation-fill-mode: both;
+  z-index: 1;
+
+  
+
+}
+
+.slideshow2 img:nth-child(1) { animation-delay: 0.5s; z-index: 6; }
+.slideshow2 img:nth-child(2) { animation-delay: 1.5s; z-index: 5; }
+.slideshow2 img:nth-child(3) { animation-delay: 2.5s; z-index: 4; }
+.slideshow2 img:nth-child(4) { animation-delay: 3.5s; z-index: 3; }
+.slideshow2 img:nth-child(5) { animation-delay: 4.5s; z-index: 2; }
+.slideshow2 img:nth-child(6) { animation-delay: 5.5s; z-index: 1; }
+
+@keyframes cut2 {
+	0% {opacity: 1;}
+	16% {opacity: 1;}
+	17% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+
+
+
+.middlebox {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 200px;
+	justify-content: center;
+	gap: 300px;
+
+}
+
+.middlebox img {
+	width: 300px;
+	height: 200px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.slideshow3 {
+	position: relative;
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+
+}
+
+.slideshow3 img {
+	position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: cut 6s infinite;
+  animation-fill-mode: both;
+  z-index: 1;
+
+  
+
+}
+
+.slideshow3 img:nth-child(1) { animation-delay: 1s; z-index: 6; }
+.slideshow3 im

@@ -1,0 +1,186 @@
+*{
+	margin: 0;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: auto;
+	background-color: lightgoldenrodyellow;
+	gap: 30px;
+	background-image: url(assets/bg-image1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	min-width: 100vw;
+}
+
+
+
+
+.topbox {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 300px;
+	justify-content: center;
+	text-align: center;
+	font-family: arial;
+	text-transform: uppercase;
+	color: lightgoldenrodyellow;
+	align-items: center;
+	font-size: 24px;
+
+
+}
+
+.middlebox{
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.middlebox img {
+	width: 300px;
+	height: 300px;
+	filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+	justify-content: center;
+	align-items: center;
+}
+
+.middlebox2 {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.middlebox2 img {
+	width: 300px;
+	height: 300px;
+	filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+.middlebox3 {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.middlebox3 img {
+	width: 300px;
+	height: 300px;
+	filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+.middlebox4 {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.middlebox4 img {
+	width: 300px;
+	height: 300px;
+	filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+.middlebox5 {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
+}
+
+.middlebox5 img {
+	width: 300px;
+	height: 300px;
+	filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+.bottombox {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.bottombox img {
+	width: 300px;
+	height: 300px;
+	filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+
+
+
+
+.one, .three,
+.four, .six,
+.seven, .nine,
+.ten, .twelve,
+.thirteen, .fifteen,
+.sixteen, .eighteen {
+    flex: 1;               
+    display: flex;
+    align-items: center;
+     color: lightgoldenrodyellow;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+
+.one, .four, .seven, .ten, .thirteen, .sixteen {
+    justify-content: center;
+    text-align: center;
+    padding-right: 30px;
+    color: lightgoldenrodyellow;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+
+.three, .six, .nine, .twelve, .fifteen, .eighteen {
+    justify-content: flex-start;
+    text-align: center;
+    padding-left: 30px;
+}
+
+
+.two, .five, .eight, .eleven, .fourteen, .seventeen {
+    flex: 0 0 auto; /* prevents resizing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-b

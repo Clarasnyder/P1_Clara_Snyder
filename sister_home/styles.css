@@ -1,0 +1,29 @@
+
+* {
+	background-color: black;
+}
+.container {
+		display: flex;
+	flex-direction: column;
+	width: 70vw;
+	height: auto;
+	gap: 20px;
+	background-color: black;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.container img {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	pointer-events: none;
+	
+}
+
+body {
+	font-size: 14px;
+	color: white;
+
+}
