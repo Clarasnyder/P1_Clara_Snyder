@@ -1,8 +1,8 @@
 body {
     display: flex;
-    justify-content: center;       /* horizontal centering */
-    align-items: center;           /* vertical centering */
-    min-height: 100vh;             /* allow it to shrink if needed */
+    justify-content: center;       
+    align-items: center;           
+    min-height: 100vh;             
     margin: 0;
     font-family: arial;
     font-size: 32px;
@@ -14,7 +14,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 20px;                 /* prevent text from touching screen edges on small screens */
+    padding: 20px;                 
 }
 
 .text-container {
@@ -26,16 +26,16 @@ body {
 
 .text-container p {
     line-height: 1.5;
-    font-size: clamp(24px, 2vw, 32px);   /* scales text between 18px and 32px */
+    font-size: clamp(24px, 2vw, 32px);   
 }
 
 
 .bottom-button {
     position: fixed;
-    bottom: 20px;       /* distance from bottom */
-    right: 20px;        /* distance from right edge */
-    left: auto;          /* remove centering */
-    transform: none;     /* no translateX needed */
+    bottom: 20px;       
+    right: 20px;        
+    left: auto;          
+    transform: none;     
     
     display: flex;
     align-items: center;
@@ -65,11 +65,11 @@ body {
 
 
 
-/* Position top-left */
+
 .top-button {
     position: fixed;
-    top: 20px;           /* distance from top */
-    left: 20px;          /* distance from left */
+    top: 20px;           
+    left: 20px;         
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,18 +81,18 @@ body {
     text-decoration: none;
 }
 
-/* Arrow pointing left */
+
 .arrow-back {
     width: 18px;
     height: 18px;
-    border-top: 3px solid currentColor;     /* horizontal line */
-    border-left: 3px solid currentColor;    /* vertical line */
-    transform: rotate(-45deg);               /* points left and up */
+    border-top: 3px solid currentColor;     
+    border-left: 3px solid currentColor;    
+    transform: rotate(-45deg);               
     display: block;
     background-color: transparent;
 }
 
-/* Hover effect */
+
 .top-button:hover {
     color: lightgrey;
 }
