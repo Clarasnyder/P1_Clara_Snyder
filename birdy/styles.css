@@ -2,7 +2,9 @@ body {
 	background-image: url(assets/birds4.JPG);
 	background-color: lightgoldenrodyellow;
 	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
+	min-height: 100vh;
 
 	display: flex;
 	justify-content: center;
@@ -209,7 +211,6 @@ body {
 .top-button:hover {
     color: lightgrey;
 }
-
 
 
 
